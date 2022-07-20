@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class ArrayListPractice {
 
     //creating arrayList
-    static ArrayList<Student> students = new ArrayList<>(Arrays.asList(new Student(1,"Upendra"),
+    public static ArrayList<Student> students = new ArrayList<>(Arrays.asList(new Student(1,"Upendra"),
             new Student(2,"Anjana")));
 
     //adding elements
