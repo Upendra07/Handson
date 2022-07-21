@@ -44,6 +44,7 @@ public class IoPractice {
     }
 
     public static void readUsingFileReader() throws IOException {
+
         FileReader fr = new FileReader("test.txt");
         char[] charArray = new char[100];
         fr.read(charArray);
