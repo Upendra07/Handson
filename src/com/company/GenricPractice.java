@@ -1,5 +1,10 @@
 package com.company;
 
+import com.company.Pojo.Student;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenricPractice<T>{
 
     T var1;
@@ -30,6 +35,10 @@ public class GenricPractice<T>{
 
     }
 
+    static void printList(List<?> list){
+        System.out.println(list);
+    }
+
     public static void main(String[] args) {
 
         GenricPractice<String> obj1 = new GenricPractice<>("Hello");
@@ -46,6 +55,10 @@ public class GenricPractice<T>{
 
        // methodNumber("Hi"); gives error as String doesn't extend Number
         methodNumber(19);
+
+        List<Student> list = new ArrayList<>();
+        list.add(new Student(1,"Yateesh"));
+        printList(list);
 
 
     }

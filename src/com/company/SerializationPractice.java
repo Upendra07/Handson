@@ -8,8 +8,10 @@ public class SerializationPractice implements Serializable {
     private String name;
 
     SerializationPractice(int rollNo,String name){
+
         this.rollNo = rollNo;
         this.name = name;
+
     }
 
     @Override
@@ -21,6 +23,7 @@ public class SerializationPractice implements Serializable {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
+
         SerializationPractice obj = new SerializationPractice(1,"Upendra");
 
         //Serializing

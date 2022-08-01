@@ -28,9 +28,11 @@ public class Question3String {
 
 
         for(Map.Entry<Character,Integer> entry: hashMap.entrySet()){
+
             if (entry.getValue()>1){
                 str = str.replace(entry.getKey().toString(),"");
             }
+
         }
 
         System.out.println(str);

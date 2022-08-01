@@ -1,10 +1,10 @@
 package com.company;
 
 
-import com.company.CollectionFrameworks.QueueInterface.ArrayDequePractice;
-import com.company.CollectionFrameworks.QueueInterface.PriorityQueuePractice;
+import com.company.Pojo.Student;
 
 public class Main {
+
 
     public static void main(String[] args) {
 
@@ -30,6 +30,17 @@ public class Main {
 
 //        PriorityQueuePractice.QueueSpecific();
 //        ArrayDequePractice.dequeMethods();
+
+
+        Student s = new Student(100,"Upendra");
+        method(s);
+        System.out.println(s.getName());
+
+    }
+
+    public static void method(Student s){
+        s.setName("Yateesh");
+        System.out.println(s.getRollNo());
 
     }
 }

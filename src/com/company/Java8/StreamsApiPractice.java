@@ -64,10 +64,6 @@ public class StreamsApiPractice {
         Optional<Student> stud =  ArrayListPractice.students.stream().max((s1,s2)-> s1.getName().length() - s2.getName().length() );
         stud.ifPresent(System.out::println);
 
-
-
-
-
     }
 
 

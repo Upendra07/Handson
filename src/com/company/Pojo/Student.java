@@ -9,6 +9,10 @@ public class Student{
         Name = name;
     }
 
+    public Student() {
+
+    }
+
     public int getRollNo() {
         return rollNo;
     }

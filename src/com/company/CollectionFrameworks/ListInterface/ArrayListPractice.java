@@ -22,6 +22,7 @@ public class ArrayListPractice {
 
        System.out.println("---------------------------");
        students.forEach(System.out::println);
+
    }
 
    public static List<Student> sortElementsDsc(){
@@ -68,5 +69,24 @@ public class ArrayListPractice {
        while (interator.hasNext()){
            System.out.println(interator.next());
        }
+    }
+
+    public static void listIteratorDemo(){
+
+       ArrayListPractice.addElements();
+       ListIterator<Student> listIterator = students.listIterator();
+
+       if(listIterator.hasNext()){
+           if (listIterator.next().getName().equals("Upendra")){
+               listIterator.set(new Student(1,"UpendraReplaced"));
+           }
+       }
+
+        System.out.println(students);
+
+    }
+
+    public static void main(String[] args) {
+        listIteratorDemo();
     }
 }
