@@ -1,5 +1,7 @@
 package com.company;
 
+import java.beans.Customizer;
+
 public class ThreadPractice {
 
     static class ThreadDemo1 implements Runnable{
@@ -64,3 +66,31 @@ class ThreadSync{
     }
 
 }
+
+class ATM {
+
+    void displayBalance(Customer customer){
+        System.out.print(customer.name);
+        System.out.print(" balance is "+ customer.amount);
+    }
+
+    void withdrawAmount(Customer customer){
+        System.out.print(customer.name);
+        System.out.print(" is withdrawing "+ customer.amount);
+    }
+
+}
+
+class Customer{
+
+    String name;
+    int amount;
+
+    Customer(String name,int amount){
+
+        this.name = name;
+        this.amount = amount;
+
+    }
+}
+
